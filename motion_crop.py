@@ -29,7 +29,7 @@ while cap.isOpened():
         if cv2.contourArea(contour) < 7000:    #to remove small unnecessary contours, (modify number for better results)
             continue
         
-        filename = "test{}-{}.jpg".format(count1,count2)
+        filename = "clip{}-{}.jpg".format(count1,count2)
 
         motion = frame1[y:y+h, x:x+w]
         cv2.imwrite(filename, motion)
